@@ -124,6 +124,9 @@
     background-color: white;
     height: 3.5rem;
 }
+.search-bar .text {
+    padding-left: 1rem;
+}
 
 .search-bar>div {
     display: flex;
@@ -131,8 +134,8 @@
     padding: 1rem 0 1rem 0.5rem;
     width: 96%;
     background-color: white;
-    color: grey;
-    font-weight: bold;
+    color: rgb(163, 163, 163);
+    font-weight: 500;
     height: 2.5rem;
     box-shadow:
         0px 0px 2.2px rgba(0, 0, 0, 0.02),
@@ -166,6 +169,7 @@
     border-bottom: 2px solid rgb(246, 246, 246);
     display: flex;
     background-color: white;
+    padding-left: 1rem;
 }
 
 .contact-photo {
@@ -220,34 +224,53 @@
     height: 4.5rem;
     border: 1px dashed black;
     display: flex;
+    z-index: 1;
 }
 
 .message-area {
-    flex-grow: 1;
+    
     border: 1px dashed black;
+    background-image: url(../img/mine.jpg);
 }
 
 .message-container {
-    width: 85%;
+    width: 80%;
     height: 100%;
-    border: 1px dashed red;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding-top: 4rem;
 }
+.message {
+    width: 60%;
+    border-radius: 10px;
+    padding: 1rem 1.8rem 1.2rem 1rem;
+    position: relative;
+    overflow: scroll;
+}
+
+.message-more {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--top-icon);
+}
+.message .our {
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    font-size: 0.6rem;
+    color: var(--top-icon);
+}
 
 .send-message {
-    width: 60%;
-    height: 10rem;
-    background-color: green;
+    
+    background-color: var(--send-message);
     align-self: flex-end;
 }
 
 .recived-message {
-    width: 60%;
-    height: 10rem;
     background-color: white;
 }
 
@@ -265,16 +288,22 @@
     .left-container {
         width: 5rem;
     }
+    .profile img {
+        padding: 0.8rem;
+    }
 
     .contacts-list {
         height: calc(100% - 2rem);
+    }
+    .contact {
+        padding: 0;
     }
 
     .notifications-pop-up,
     .search-bar,
     .utilities,
     .contact-name,
-    .our {
+    .contact .our {
         display: none;
         width: 0;
     }
@@ -292,10 +321,17 @@
         padding: 0;
     }
 
+    .message {
+        padding-bottom: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 540px) {
     .left-container {
         display: none;
+    }
+    .message {
+        padding-bottom: 1.5rem;
     }
 }
