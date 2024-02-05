@@ -28,12 +28,19 @@
 .left-container {
     width: 35%;
     height: 100%;
-    background-color: grey;
 }
 .me-profile {
     height: 5rem;
     border: 3px dashed black;
     display: flex;
+}
+.profile {
+    width: 20%;
+    background-color: black;
+}
+.utilities {
+    width: 80%;
+    background-color: grey;
 }
 .notifications-pop-up {
     height: 6rem;
@@ -46,13 +53,21 @@
 }
 .contacts-list {
     height: calc(100% - 15rem);
-    background-color: yellow;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .contact {
     height: 10rem;
     border: 3px dashed red;
+    display: flex;
+}
+.contact-photo{
+    width: 20%;
+    background-color: violet;
+}
+.contact-name{
+    width: 80%;
+    background-color: yellow;
 }
 .right-container {
     width: 65%;
@@ -98,6 +113,11 @@
     background-color: white;
 }
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
 
 @media screen and (max-width: 540px) {}
