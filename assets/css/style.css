@@ -44,7 +44,6 @@
 .container {
     width: 80vw;
     height: 95vh;
-    border: 1px dashed black;
     display: flex;
 }
 
@@ -161,7 +160,8 @@
 
 .contacts-list {
     height: calc(100% - 13rem);
-    overflow-y: scroll;
+    overflow-y: auto;
+    background-color: white;
 }
 
 .contact {
@@ -207,6 +207,8 @@
     margin-right: 1rem;
 }
 
+
+
 /* #endregion left side */
 
 /* #region right side */
@@ -214,7 +216,6 @@
 .right-container {
     width: 65%;
     height: 100%;
-    background-color: pink;
     display: flex;
     flex-direction: column;
 }
@@ -252,18 +253,12 @@
     color: var(--top-icon);
 }
 
-.write-area {
-    height: 4.5rem;
-    display: flex;
-    background-color: var(--bottom-bar);
-    border-left: 2px solid rgb(213, 213, 213);
-}
 
 .message-area {
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
-    overflow-y: scroll;
-
+    overflow-y:auto;
+    
 }
 
 .message-container {
@@ -280,7 +275,7 @@
     border-radius: 10px;
     padding: 1rem 1.8rem 1.2rem 1rem;
     position: relative;
-   
+    
 }
 
 .message-more {
@@ -307,6 +302,33 @@
     background-color: white;
 }
 
+.write-area {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--bottom-bar);
+    border-left: 2px solid rgb(213, 213, 213);
+}
+
+.emoticons, .vocal-message {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--bottom-icon);
+}
+ 
+.write-message {
+    flex-grow: 1;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 1rem;
+    color: rgb(163, 163, 163);
+
+}
 /* #endregion right side */
 
 /* #endregion main */
@@ -317,7 +339,7 @@
         width: 100vw;
         height: 100vh;
     }
-
+    
     .left-container {
         width: 5rem;
     }
