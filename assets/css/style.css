@@ -57,7 +57,7 @@
 }
 
 .contact {
-    height: 10rem;
+    height: 5rem;
     border: 3px dashed red;
     display: flex;
 }
@@ -117,6 +117,23 @@
     .container {
         width: 100vw;
         height: 100vh;
+    }
+    .left-container {
+        width: 5rem;
+    }
+    .contacts-list {
+        height: calc(100% - 5rem);
+    }
+    .notifications-pop-up, .search-bar, .utilities, .contact-name {
+        display: none;
+        width: 0;
+    }
+    
+    .contact-photo, .profile {
+        width: 100%;
+    }
+    .right-container{
+        width: 100%;
     }
 }
 
