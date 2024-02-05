@@ -6,7 +6,18 @@
 }
 
 /* Utilities */
+:root {
+    --top-backround: #009688;
+    --bottom-backround: #dadbd4;
+    --top-bar: #eaeaea;
+    --bottom-bar: #f3eeea;
+    --searchbar-background: #fafafa;
+    --top-icon: #b1b1b1;
+    --bottom-icon: #6b7376;
+    --send-message: #d5f9ba;
 
+
+}
 /* Color palette  */
 
 /* Region main */
