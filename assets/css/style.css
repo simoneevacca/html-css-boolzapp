@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /* Utilities */
@@ -15,9 +16,8 @@
     --top-icon: #b1b1b1;
     --bottom-icon: #6b7376;
     --send-message: #d5f9ba;
-
-
 }
+
 /* Color palette  */
 
 /* Region main */
@@ -27,7 +27,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(var(--top-backround) 0%,
+            var(--top-backround) 18%,
+            var(--bottom-backround) 18%,
+            var(--bottom-backround) 100%);
 }
+
 
 .container {
     width: 80vw;
@@ -40,28 +45,34 @@
     width: 35%;
     height: 100%;
 }
+
 .me-profile {
     height: 5rem;
     border: 3px dashed black;
     display: flex;
 }
+
 .profile {
     width: 20%;
     background-color: black;
 }
+
 .utilities {
     width: 80%;
     background-color: grey;
 }
+
 .notifications-pop-up {
     height: 6rem;
     background-color: rgb(0, 208, 255);
 }
+
 .search-bar {
     height: 4rem;
     border: 3px dashed rgb(128, 0, 0);
     background-color: white;
 }
+
 .contacts-list {
     height: calc(100% - 15rem);
     overflow-y: scroll;
@@ -72,14 +83,17 @@
     border: 3px dashed red;
     display: flex;
 }
-.contact-photo{
+
+.contact-photo {
     width: 20%;
     background-color: violet;
 }
-.contact-name{
+
+.contact-name {
     width: 80%;
     background-color: yellow;
 }
+
 .right-container {
     width: 65%;
     height: 100%;
@@ -129,21 +143,29 @@
         width: 100vw;
         height: 100vh;
     }
+
     .left-container {
         width: 5rem;
     }
+
     .contacts-list {
         height: calc(100% - 5rem);
     }
-    .notifications-pop-up, .search-bar, .utilities, .contact-name {
+
+    .notifications-pop-up,
+    .search-bar,
+    .utilities,
+    .contact-name {
         display: none;
         width: 0;
     }
-    
-    .contact-photo, .profile {
+
+    .contact-photo,
+    .profile {
         width: 100%;
     }
-    .right-container{
+
+    .right-container {
         width: 100%;
     }
 }
