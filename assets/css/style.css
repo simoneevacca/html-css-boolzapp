@@ -165,6 +165,7 @@
     height: 5rem;
     border-bottom: 2px solid rgb(246, 246, 246);
     display: flex;
+    background-color: white;
 }
 
 .contact-photo {
@@ -199,6 +200,7 @@
     padding-top: 1rem;
     color: rgb(172, 172, 172);
     font-size: 0.9rem;
+    margin-right: 1rem;
 }
 
 /* #endregion left side */
@@ -265,13 +267,14 @@
     }
 
     .contacts-list {
-        height: calc(100% - 5rem);
+        height: calc(100% - 2rem);
     }
 
     .notifications-pop-up,
     .search-bar,
     .utilities,
-    .contact-name {
+    .contact-name,
+    .our {
         display: none;
         width: 0;
     }
