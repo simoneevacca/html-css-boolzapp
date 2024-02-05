@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: "Lato", sans-serif;
 }
 
 /* #endRegion general */
@@ -22,6 +22,7 @@
     --top-icon: #b1b1b1;
     --bottom-icon: #6b7376;
     --send-message: #d5f9ba;
+    --pop-up-color: #8edafc;
 }
 
 
@@ -54,10 +55,10 @@
 }
 
 .me-profile {
-    height: 5rem;
+    height: 4.5rem;
     display: flex;
     background-color: var(--top-bar);
-    padding: 0.3rem 1rem;
+    padding: 0.8rem 1rem;
 }
 
 .profile {
@@ -80,8 +81,37 @@
 }
 
 .notifications-pop-up {
-    height: 6rem;
-    background-color: rgb(0, 208, 255);
+    height: 5rem;
+    padding: 0rem 1rem;
+    background-color: var(--pop-up-color);
+    display: flex;
+    align-items: center;
+}
+
+.bell {
+    height: 60%;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pop-up-color);
+    font-size: 1.4rem;
+
+}
+.text-notification {
+    width: 85%;
+    height: 100%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-notification a {
+    color: rgb(66, 66, 66);
+    font-size: 0.85rem;
 }
 
 .search-bar {
@@ -124,7 +154,7 @@
 
 .actual-contact,
 .write-area {
-    height: 5rem;
+    height: 4.5rem;
     border: 1px dashed black;
     display: flex;
 }
