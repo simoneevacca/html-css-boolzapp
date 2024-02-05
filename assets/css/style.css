@@ -73,7 +73,7 @@
 }
 
 .utilities {
-    width: 80%;
+    width: 85%;
     font-size: 1.5rem;
     display: flex;
     justify-content: flex-end;
@@ -156,26 +156,49 @@
     align-items: center;
 }
 
-
 .contacts-list {
-    height: calc(100% - 15rem);
+    height: calc(100% - 13rem);
     overflow-y: scroll;
 }
 
 .contact {
     height: 5rem;
-    border: 3px dashed red;
+    border-bottom: 2px solid rgb(246, 246, 246);
     display: flex;
 }
 
 .contact-photo {
-    width: 20%;
-    background-color: violet;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contact img {
+    height: 60%;
+    border-radius: 50%;
 }
 
 .contact-name {
-    width: 80%;
-    background-color: yellow;
+    width: 75%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.contact .info {
+    color: rgb(172, 172, 172);
+}
+.contact .our {
+    width: 10%;
+    background-color: white;
+    padding-top: 1rem;
+    color: rgb(172, 172, 172);
+    font-size: 0.9rem;
 }
 
 /* #endregion left side */
