@@ -1,4 +1,4 @@
-/* Region general */
+/* #Region general */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,13 @@
 
 }
 
+/* #endRegion general */
+
+
+
 /* Utilities */
+    
+/* Color palette  */
 :root {
     --top-backround: #009688;
     --bottom-backround: #dadbd4;
@@ -18,9 +24,9 @@
     --send-message: #d5f9ba;
 }
 
-/* Color palette  */
 
-/* Region main */
+/* #region main */
+
 #site_main {
     height: 100vh;
     position: relative;
@@ -40,6 +46,7 @@
     border: 1px dashed black;
     display: flex;
 }
+/* #region left side */
 
 .left-container {
     width: 35%;
@@ -48,18 +55,28 @@
 
 .me-profile {
     height: 5rem;
-    border: 3px dashed black;
     display: flex;
+    background-color: var(--top-bar);
+    padding: 0.3rem 1rem;
 }
 
 .profile {
-    width: 20%;
-    background-color: black;
+    height: 100%;
+    display: flex;
+}
+.profile img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .utilities {
     width: 80%;
-    background-color: grey;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    color: var(--top-icon);
 }
 
 .notifications-pop-up {
@@ -93,6 +110,9 @@
     width: 80%;
     background-color: yellow;
 }
+/* #endregion left side */
+
+/* #region right side */
 
 .right-container {
     width: 65%;
@@ -137,6 +157,10 @@
     height: 10rem;
     background-color: white;
 }
+/* #endregion right side */
+
+/* #endregion main */
+
 
 @media screen and (max-width: 991px) {
     .container {
@@ -168,6 +192,10 @@
     .right-container {
         width: 100%;
     }
+    .me-profile {
+        padding: 0;
+    }
+  
 }
 
 @media screen and (max-width: 540px) {
