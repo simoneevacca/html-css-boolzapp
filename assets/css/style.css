@@ -219,18 +219,51 @@
     flex-direction: column;
 }
 
-.actual-contact,
+.actual-contact{
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--top-bar);
+    border-left: 2px solid rgb(213, 213, 213);
+}
+.actual-contact .name {
+    display: flex;
+    align-items: center;
+}
+
+.actual-contact .photo {
+    height: 100%;
+}
+.actual-contact img {
+    height: 100%;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+.contact-chat div:nth-child(2) {
+    color: grey;
+    font-size: 0.8rem;
+}
+.actual-contact .icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--top-icon);
+}
+
 .write-area {
     height: 4.5rem;
-    border: 1px dashed black;
     display: flex;
-    z-index: 1;
+    background-color: var(--bottom-bar);
+    border-left: 2px solid rgb(213, 213, 213);
 }
 
 .message-area {
-    
-    border: 1px dashed black;
+    flex-grow: 1;
     background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+
 }
 
 .message-container {
@@ -247,7 +280,7 @@
     border-radius: 10px;
     padding: 1rem 1.8rem 1.2rem 1rem;
     position: relative;
-    overflow: scroll;
+   
 }
 
 .message-more {
