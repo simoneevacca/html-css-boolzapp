@@ -1,10 +1,27 @@
 /* Region general */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Utilities */
 
 /* Color palette  */
 
-
+/* Region main */
+#site_main {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 80vw;
+    height: 95vh;
+    border: 1px dashed black;
+  
+}
 
 
 @media screen and (max-width: 991px) {
