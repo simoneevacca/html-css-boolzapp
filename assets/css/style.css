@@ -303,6 +303,33 @@
     background-color: white;
 }
 
+.more-action {
+    background-color: white;
+    color: black;
+    width: 10rem;
+    position: absolute;
+    right: 0rem;
+    top: 1.5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.02),
+        0px 0px 5.3px rgba(0, 0, 0, 0.028),
+        0px 0px 10px rgba(0, 0, 0, 0.035),
+        0px 0px 17.9px rgba(0, 0, 0, 0.042),
+        0px 0px 33.4px rgba(0, 0, 0, 0.05),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
+       display: none;
+}
+
+.message-more:hover .more-action {
+    display: flex;
+}
+
 .write-area {
     height: 4.5rem;
     display: flex;
