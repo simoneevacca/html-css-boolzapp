@@ -389,4 +389,18 @@
     .message {
         padding-bottom: 1.5rem;
     }
+
+    .emoticons {
+        display: none;
+    }
+    .vocal-message {
+        display: none;
+    }
+
+    .write-area {
+        padding: 0 1rem;
+    }
+    .actual-contact .icon {
+        display: none;
+    }
 }
