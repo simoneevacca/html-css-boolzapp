@@ -333,6 +333,8 @@
 .write-area {
     height: 4.5rem;
     display: flex;
+    flex-shrink: 0;
+
     align-items: center;
     background-color: var(--bottom-bar);
     border-left: 2px solid rgb(213, 213, 213);
@@ -355,7 +357,6 @@
     border-radius: 5px;
     padding-left: 1rem;
     color: rgb(163, 163, 163);
-
 }
 /* #endregion right side */
 
@@ -376,7 +377,7 @@
     }
 
     .contacts-list {
-        height: calc(100% - 2rem);
+        height: calc(100% - 4.5rem);
     }
     .contact {
         padding: 0;
